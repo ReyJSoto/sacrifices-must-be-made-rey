@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://gk5mc25gcf4f"]
+
+[node name="Throwable" type="Node2D"]

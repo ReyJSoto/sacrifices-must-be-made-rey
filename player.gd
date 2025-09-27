@@ -1,9 +1,7 @@
 extends CharacterBody2D
 
-
 const SPEED = 670.0
 const JUMP_VELOCITY = -410.0
-
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -27,18 +25,3 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
-
-@export var main_tscn: PackedScene
-
-func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("throw"):
-		throw_ball()
-
-func throw_ball():
-	var ball = main_tscn.instantiate(1)
-	get_tree().current_scene.add_child(ball)
-	ball.global_position = global_position
-
-	var mouse_position = get_global_mouse_position()
-	var direction = mouse_position - global_position
-	ball.throw_in_direction(direction)
