@@ -3,17 +3,7 @@
 [ext_resource type="Script" uid="uid://c3e503sh4gkst" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://c2ukv6v8pkcpq" path="res://Idle.png" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://dhs1tk1etiukt" path="res://Sky.png" id="3_lquwl"]
-<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://bp3lds0ennqvs" path="res://Animation.png" id="4_1bvp3"]
-=======
-[ext_resource type="Script" uid="uid://dw5l8socwbdha" path="res://object.gd" id="4_lquwl"]
-[ext_resource type="Texture2D" uid="uid://con43kxfobp86" path="res://ball.png" id="5_7mycd"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
-size = Vector2(100, 127)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_h2yge"]
->>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
 texture = ExtResource("3_lquwl")
@@ -32431,7 +32421,6 @@ texture = ExtResource("3_lquwl")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_h2yge")
 
-<<<<<<< Updated upstream
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
 size = Vector2(100, 127)
 
@@ -32463,13 +32452,6 @@ animations = [{
 "name": &"new_animation",
 "speed": 8.0
 }]
-=======
-[sub_resource type="CircleShape2D" id="CircleShape2D_272bh"]
-radius = 29.0
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_5vw27"]
-radius = 38.013157
->>>>>>> Stashed changes
 
 [node name="Node" type="Node"]
 
@@ -32502,18 +32484,11 @@ scale = Vector2(0.9878544, 1.0222225)
 texture = ExtResource("2_h2yge")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
-position = Vector2(-91, -93)
-script = ExtResource("4_lquwl")
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
-texture = ExtResource("5_7mycd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-position = Vector2(-1, 2)
-shape = SubResource("CircleShape2D_272bh")
 
 [node name="Area2D" type="Area2D" parent="RigidBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D/Area2D"]
-position = Vector2(-1, 1)
-shape = SubResource("CircleShape2D_5vw27")
