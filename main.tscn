@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=4 uid="uid://3muc8i16wocy"]
+[gd_scene load_steps=13 format=4 uid="uid://3muc8i16wocy"]
 
 [ext_resource type="Script" uid="uid://c3e503sh4gkst" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://c2ukv6v8pkcpq" path="res://Idle.png" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://dhs1tk1etiukt" path="res://Sky.png" id="3_lquwl"]
 [ext_resource type="Texture2D" uid="uid://bp3lds0ennqvs" path="res://Animation.png" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://dhj7pkxfwi28e" path="res://rigid_body_2d.gd" id="5_lquwl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
 texture = ExtResource("3_lquwl")
@@ -32484,11 +32485,8 @@ scale = Vector2(3.887035, 4.4023085)
 texture = ExtResource("2_h2yge")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
+script = ExtResource("5_lquwl")
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-
-[node name="Area2D" type="Area2D" parent="RigidBody2D"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D/Area2D"]

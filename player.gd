@@ -29,3 +29,12 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+# Assume you have a reference to the object you're throwing
+
+func _on_throw_button_pressed():
+	var direction = Vector2.RIGHT  # Or use mouse direction, etc.
+	var object_to_throw = preload("res://ball.png").instantiate()
+	add_child(object_to_throw)
+	object_to_throw.global_position = global_position
+	object_to_throw.throw(direction)
