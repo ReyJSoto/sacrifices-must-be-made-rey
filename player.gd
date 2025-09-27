@@ -21,6 +21,7 @@ func throw_process()
 	var direction := Input.get_axis("left", "right")
 	if direction:
 		velocity.x = direction * SPEED
+		
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
