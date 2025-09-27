@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=4 uid="uid://3muc8i16wocy"]
+[gd_scene load_steps=16 format=4 uid="uid://3muc8i16wocy"]
 
 [ext_resource type="Script" uid="uid://c3e503sh4gkst" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://larachbwtlxn" path="res://grass.png" id="2_lquwl"]
 [ext_resource type="Texture2D" uid="uid://dhs1tk1etiukt" path="res://Sky.png" id="3_lquwl"]
 [ext_resource type="Texture2D" uid="uid://bp3lds0ennqvs" path="res://Animation.png" id="4_1bvp3"]
-[ext_resource type="Script" path="res://rigid_body_2d.gd" id="5_lquwl"]
+[ext_resource type="Script" uid="uid://dhj7pkxfwi28e" path="res://rigid_body_2d.gd" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://con43kxfobp86" path="res://ball.png" id="6_7mycd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
 texture = ExtResource("3_lquwl")
@@ -32667,6 +32668,9 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_7mycd"]
+radius = 29.017237
+
 [node name="Node" type="Node"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -32692,8 +32696,12 @@ animation = &"new_animation"
 frame_progress = 0.336764
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(135, -78)
 script = ExtResource("5_lquwl")
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+position = Vector2(1, 0)
+texture = ExtResource("6_7mycd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("CircleShape2D_7mycd")
