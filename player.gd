@@ -28,7 +28,7 @@ func _physics_process(delta: float) -> void:
 
 # Assume you have a reference to the object you're throwing
 
-func _on_throw_button_pressed():
+func _on_throw_button_pressed(throw):
 	var direction = Vector2.RIGHT  # Or use mouse direction, etc.
 	var object_to_throw = preload("res://ball.png").instantiate()
 	add_child(object_to_throw)
