@@ -32488,17 +32488,17 @@ shape = SubResource("RectangleShape2D_7mycd")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
-[node name="Movement" type="AnimatedSprite2D" parent="Player"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
 position = Vector2(-44, -13.999992)
 scale = Vector2(3.9348257, 4.306605)
 sprite_frames = SubResource("SpriteFrames_h2yge")
 animation = &"new_animation"
-frame_progress = 0.16432706
+frame_progress = 0.65543467
 
-[node name="Idle" type="Sprite2D" parent="Player"]
+[node name="Sprite2D" type="Sprite2D" parent="Player/AnimatedSprite2D"]
 visible = false
-position = Vector2(-45.274445, -14.510376)
-scale = Vector2(3.887035, 4.4023085)
+position = Vector2(-0.32388687, -0.118515015)
+scale = Vector2(0.9878544, 1.0222225)
 texture = ExtResource("2_h2yge")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
