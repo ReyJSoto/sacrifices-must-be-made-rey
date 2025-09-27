@@ -35,7 +35,7 @@ func _input(event: InputEvent) -> void:
 		throw_ball()
 
 func throw_ball():
-	var ball = main_tscn.instantiate(1)
+	var ball = main_tscn.instantiate()
 	get_tree().current_scene.add_child(ball)
 	ball.global_position = global_position
 
