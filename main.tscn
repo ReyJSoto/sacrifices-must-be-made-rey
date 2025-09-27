@@ -32696,10 +32696,13 @@ animation = &"new_animation"
 frame_progress = 0.336764
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(-73, -45)
 script = ExtResource("5_lquwl")
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+position = Vector2(1, -1)
 texture = ExtResource("6_7mycd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_272bh")
