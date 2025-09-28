@@ -29,10 +29,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> parent of 9036853 (new code)
 =======
 >>>>>>> parent of 9036853 (new code)
 
@@ -51,9 +48,6 @@ func throw_ball():
 	var direction = mouse_position - global_position
 	ball.throw_in_direction(direction)
 <<<<<<< HEAD
-<<<<<<< HEAD
 >>>>>>> parent of 509640b (house)
-=======
->>>>>>> parent of 9036853 (new code)
 =======
 >>>>>>> parent of 9036853 (new code)
