@@ -1,7 +1,9 @@
 extends CharacterBody2D
 
+
 const SPEED = 670.0
 const JUMP_VELOCITY = -410.0
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -26,7 +28,10 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 9036853 (new code)
 
 @export var main_tscn: PackedScene
 
@@ -42,4 +47,7 @@ func throw_ball():
 	var mouse_position = get_global_mouse_position()
 	var direction = mouse_position - global_position
 	ball.throw_in_direction(direction)
+<<<<<<< HEAD
 >>>>>>> parent of 509640b (house)
+=======
+>>>>>>> parent of 9036853 (new code)

@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_scene load_steps=25 format=4 uid="uid://3muc8i16wocy"]
 =======
 [gd_scene load_steps=24 format=4 uid="uid://3muc8i16wocy"]
 >>>>>>> parent of 509640b (house)
+=======
+[gd_scene load_steps=24 format=4 uid="uid://3muc8i16wocy"]
+>>>>>>> parent of 9036853 (new code)
 
 [ext_resource type="Script" uid="uid://c3e503sh4gkst" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://dhqttfcq7u3n3" path="res://white.jpg" id="2_5vw27"]
@@ -14,9 +18,12 @@
 [ext_resource type="Texture2D" uid="uid://cikaeggdc44k0" path="res://brick.jpg" id="6_4c57u"]
 [ext_resource type="Texture2D" uid="uid://con43kxfobp86" path="res://ball.png" id="6_7mycd"]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://dkr7egawwdexy" path="res://object_logic.gd" id="10_4c57u"]
 =======
 >>>>>>> parent of 509640b (house)
+=======
+>>>>>>> parent of 9036853 (new code)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
 texture = ExtResource("3_lquwl")
@@ -33291,16 +33298,13 @@ sprite_frames = SubResource("SpriteFrames_h2yge")
 animation = &"run"
 frame_progress = 0.4077019
 
-[node name="Throwable" type="RigidBody2D" parent="."]
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
 position = Vector2(135, -78)
 script = ExtResource("5_lquwl")
 
-[node name="Sprite2D" type="Sprite2D" parent="Throwable"]
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
 position = Vector2(1, 0)
 texture = ExtResource("6_7mycd")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Throwable"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 shape = SubResource("CircleShape2D_7mycd")
-
-[node name="ObjectLogic" type="Node" parent="."]
-script = ExtResource("10_4c57u")
