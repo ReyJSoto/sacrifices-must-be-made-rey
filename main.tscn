@@ -1,9 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_scene load_steps=25 format=4 uid="uid://3muc8i16wocy"]
 =======
 [gd_scene load_steps=24 format=4 uid="uid://3muc8i16wocy"]
 >>>>>>> parent of 509640b (house)
+=======
+[gd_scene load_steps=24 format=4 uid="uid://3muc8i16wocy"]
+>>>>>>> parent of 9036853 (new code)
 =======
 [gd_scene load_steps=24 format=4 uid="uid://3muc8i16wocy"]
 >>>>>>> parent of 9036853 (new code)
@@ -19,9 +23,12 @@
 [ext_resource type="Texture2D" uid="uid://con43kxfobp86" path="res://ball.png" id="6_7mycd"]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://dkr7egawwdexy" path="res://object_logic.gd" id="10_4c57u"]
 =======
 >>>>>>> parent of 509640b (house)
+=======
+>>>>>>> parent of 9036853 (new code)
 =======
 >>>>>>> parent of 9036853 (new code)
 
